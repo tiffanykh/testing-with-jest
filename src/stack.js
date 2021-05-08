@@ -16,3 +16,8 @@ exports.pop = function () {
 exports.peek = function () {
     return _.last(stack);
 }
+
+// Returnerar det understa elementet i stacken
+exports.down = function () {
+    return stack[0];
+}
