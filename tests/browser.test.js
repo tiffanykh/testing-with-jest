@@ -29,8 +29,9 @@ test('Check if input prints on the page', async () => {
   let alert = await driver.switchTo().alert();
   await alert.sendKeys("Hej");
   await alert.accept();
-  let stack = await driver.findElement(By.id('top_of_stack')).getText();
+  let stack = await driver.findElement(By.id('top_of_stack'));
   expect(stack).toEqual("Hej");
+
 
 });
 
