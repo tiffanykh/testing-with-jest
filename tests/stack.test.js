@@ -19,5 +19,5 @@ test('peek on stack with two or more elements returns the top element', () => {
 });
 
 test('peek on the first element', () => {
-    expect(stack.peek()).toBe(1);
+    expect(stack.down()).toBe(1);
 });
